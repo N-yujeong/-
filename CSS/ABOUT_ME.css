@@ -1,0 +1,120 @@
+#introduction .container {
+    margin: 80px;
+}
+
+#introduction img {
+    height: 381.55px; /* 고정된 높이 설정 */
+    width: 276.25px; /* 고정된 너비 설정 */
+    object-fit: cover;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+}
+
+.basic {
+    border: 2px solid white; /* 테두리 설정 (두께 2px, 색상 흰색) */
+    padding: 20px; /* 내부 여백 추가 */
+    width: 500px; /* 내용에 맞게 너비 조정 */
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: rgba(255, 255, 255, 0.3); /* rgba 형식으로 변경 */
+    color: #393945;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+}
+
+.basic p {
+    margin: 10px 0;
+}
+
+#charater .container {
+    margin: 70px;
+}
+
+.estp {
+    border: 2px solid white; /* 테두리 설정 (두께 2px, 색상 흰색) */
+    padding: 20px; /* 내부 여백 추가 */
+    width: 250px; /* 내용에 맞게 너비 조정 */
+    height: 170px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: rgba(255, 255, 255, 0.3); /* rgba 형식으로 변경 */
+    color: #4f4f61;
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.63);
+}
+
+.estp dl,dd {
+    margin: 0; /* 기본 마진 제거 */
+    padding: 5px 0px; /* 기본 패딩 제거 */
+}
+
+.estp > dl > dd {
+    font-weight: bold;
+}
+
+#charater img {
+    height: 400px; /* 고정된 높이 설정 */
+    width: 300px; /* 고정된 너비 설정 */
+    object-fit: cover;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+}
+
+#SNS .container {
+    margin: 150px;
+}
+
+.insta {
+    height: 150px;
+    width: 150px;
+}
+
+.talk {
+    height: 140px;
+    width: 140px;
+    margin: 8px;
+}
+
+.gmail {
+    height: 150px;
+    width: 150px;
+}
+
+#SNS span {
+    text-align: center;
+    margin: 0 70px; /* 각 항목 간격 설정 */
+}
+
+#SNS span > div {
+    color: #393945;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#SNS a {
+    color: #393945;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#SNS a:hover {
+    text-decoration: underline;
+}
+
+#SNS .container span {
+    border: 2px solid white; /* 테두리 설정 (두께 2px, 색상 흰색) */
+    background-color: rgba(255, 255, 255, 0.3); /* rgba 형식으로 변경 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.63);
+    padding: 25px 10px 0px 10px;
+    height: 225px;
+    width: 200px;
+}

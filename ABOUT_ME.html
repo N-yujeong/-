@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yujeong's Portpolio</title>
+
+    <!-- CSS 파일 링크 -->
+    <link href="./CSS/background.css" rel="stylesheet">
+    <link href="./CSS/ABOUT_ME.css" rel="stylesheet">
+
+    <!-- JavaScript 파일 링크 -->
+    <script src="./JS/background.js" defer></script>
+
+</head>
+<body>
+    <!--네비게이션 바 시작-->
+    <nav>
+        <!--로고 영역 시작-->
+        <div class="logo">
+            <a href="Index.html">Yujeong's Portpolio</a>
+        </div>
+        <!--로고 영역 끝-->
+
+        <!--네비게이션 메뉴 시작-->
+        <ul>
+            <li class="dropdown">
+                <a class="dropbtn">ABOUT ME</a>
+                <div class="dropdown-content">
+                    <a href="#introduction" onclick="scrollToSection(event, '#introduction')">기본 정보</a>
+                    <a href="#charater" onclick="scrollToSection(event, '#charater')">성격</a>
+                    <a href="#SNS" onclick="scrollToSection(event, '#SNS')">SNS</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">FAVORIT</a>
+                <div class="dropdown-content">
+                    <a href="FAVORIT.html#music">음악</a>                    
+                    <a href="FAVORIT.html#hobby">취미</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">SCHOOL_LIFE</a>
+                <div class="dropdown-content">
+                    <a href="SCHOOL_LIFE.html#time_table">시간표</a>
+                    <a href="SCHOOL_LIFE.html#activities">교내 활동</a>
+                </div>
+            </li>
+        </ul>
+        <!--네비게이션 메뉴 끝-->
+    </nav>
+    <!--네비게이션 바 끝-->
+
+    <main>
+        <section id="introduction">
+            <div class="title">
+                <h3>기&nbsp;&nbsp;본&nbsp;&nbsp;정&nbsp;&nbsp;보</h3>
+            </div>
+            <div class="container">
+                <span >
+                    <img src="./Images/my_photo.png">
+                </span>
+                <span class="basic">
+                    <p> 이 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 름 &nbsp;:&nbsp; 남유정</p>
+                    <p>생년월일 &nbsp;:&nbsp; 2004.11.08</p>
+                    <p>거&nbsp;&nbsp;주&nbsp;&nbsp;지 &nbsp;:&nbsp; 광주시</p>
+                    <p> 소 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 속 &nbsp;:&nbsp; 가천대학교 글로벌캠퍼스</p>
+                    <p> 전 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 공 &nbsp;:&nbsp; 컴퓨터공학전공</p>
+                    <p>전화번호 &nbsp;:&nbsp; 010-8608-7396</p>
+                </span>
+            </div>
+        </section>
+    
+        <section id="charater">
+            <div class="title">
+                <h3>성&nbsp;&nbsp;격</h3>
+            </div>
+            <div class="container">
+                <span class="estp">
+                    <dl>
+                        <dd>[장점]</dd>
+                        <br>
+                        <dl>
+                            <dd>설득력이 좋음</dd>
+                            <dd>인맥 스펙트럼이 넓음</dd>
+                            <dd>의사 표현력이 좋음</dd>
+                        </dl>
+                    </dl>
+                </span>
+                <span>
+                    <img src="./Images/ESTP.png">
+                </span>
+                <span class="estp">
+                    <dl>
+                        <dd>[단점]</dd>
+                        <br>
+                        <dl>
+                            <dd>충동적임</dd>
+                            <dd>직설적임</dd>
+                            <dd>경쟁심이 심함</dd>
+                    </dl>
+                </span>
+            </div>
+        </section>
+
+        <section id="SNS">
+            <div class="title">
+                <h3>S&nbsp;&nbsp;N&nbsp;&nbsp;S</h3>
+            </div>
+            <div class="container">
+                <span>
+                    <div><img src="./Images/insta.png" class="insta"></div>
+                    <br>
+                    <div><a href="https://www.instagram.com/yu_jeong04/?hl=ko">@yu_jeong04</a></div>
+                    
+                </span>
+                <span>
+                    <div><img src="./Images/talk.png" class="talk"></div>
+                    <br>
+                    <div>NYJ0411</div>
+                    
+                </span>
+                <span>
+                    <div><img src="./Images/gmail.png" class="gmail"></div>
+                    <br>
+                    <div><a href="laodk04@gachon.ac.kr">laodk04@gachon.ac.kr</a></div>
+                    
+                </span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yujeong's Portpolio</title>
+
+    <!-- CSS 파일 링크 -->
+    <link href="./CSS/background.css" rel="stylesheet">
+    <link href="./CSS/SCHOOL_LIFE.css" rel="stylesheet">
+
+    <!-- JavaScript 파일 링크 -->
+    <script src="./JS/background.js" defer></script>
+    <script src="./JS/SCHOOL_LIFE.js" defer></script>
+
+</head>
+<body>
+    <!--네비게이션 바 시작-->
+    <nav>
+        <!--로고 영역 시작-->
+        <div class="logo">
+            <a href="Index.html">Yujeong's Portpolio</a>
+        </div>
+        <!--로고 영역 끝-->
+
+        <!--네비게이션 메뉴 시작-->
+        <ul>
+            <li class="dropdown">
+                <a class="dropbtn">ABOUT ME</a>
+                <div class="dropdown-content">
+                    <a href="ABOUT_ME.html#introduction">기본 정보</a>
+                    <a href="ABOUT_ME.html#charater">성격</a>
+                    <a href="ABOUT_ME.html#SNS">SNS</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">FAVORIT</a>
+                <div class="dropdown-content">
+                    <a href="FAVORIT.html#music">음악</a>                    
+                    <a href="FAVORIT.html#hobby">취미</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">SCHOOL_LIFE</a>
+                <div class="dropdown-content">
+                    <a href="#time_table" onclick="scrollToSection(event, '#time_table')">시간표</a>
+                    <a href="#activities" onclick="scrollToSection(event, '#activities')">교내 활동</a>
+                </div>
+            </li>
+        </ul>
+        <!--네비게이션 메뉴 끝-->
+    </nav>
+    <!--네비게이션 바 끝-->
+
+    <main>
+        <section id="time_table">
+            <div class="title">
+                <h3>시&nbsp;&nbsp;간&nbsp;&nbsp;표</h3>
+            </div>
+            <div class="container">
+                <div class="button-container">
+                    <span class="tn" id="btn_table1" onclick="showTable('table1')">2023년 1학기 시간표</span>
+                    <span class="tn" id="btn_table2" onclick="showTable('table2')">2023년 2학기 시간표</span>
+                    <span class="tn" id="btn_table3" onclick="showTable('table3')">2024년 1학기 시간표</span>
+                </div>
+                <div id="table1" class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="hour">시간</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="hour">9</td>
+                                <td></td>
+                                <td class="color-1" rowspan="2">일본대중문화의 이해<br>(실시간화상강의)<br>박진수<br>화상강의강의실</td>
+                                <td class="color-2" rowspan="3">선형대수<br>최창열<br>산학협력관2-117</td>
+                                <td class="color-3" rowspan="3">심리학의 이해<br>(실시간화상강의)<br>최혜만<br>화상강의강의실</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">10</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">11</td>
+                                <td class="color-4" rowspan="2">한국사<br>(실시간화상강의)<br>이바른<br>화상강의강의실</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="color-5" rowspan="2">손에 잡히는 프로그래밍<br>(사이버)<br>이정훈<br>산학협력관 2-5</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">3</td>
+                                <td class="color-6">컴퓨터공학개론<br>박양재 / AI관-307</td>
+                                <td class="color-6">컴퓨터공학개론<br>박양재 / AI관-307</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">4</td>
+                                <td class="color-7">파이썬<br>한기태 / AI관-408</td>
+                                <td class="color-7">파이썬<br>한기태 / AI관-408</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">6</td>
+                                <td class="color-8" rowspan="6">인성세미나 (P/F)<br>이영호</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="table2"  class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th  class="hour">시간</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="hour">9</td>
+                                <td class="color-1" rowspan="2">한국사<br>(실시간화상강의)<br>이바른<br>화상강의강의실</td>
+                                <td class="color-2" rowspan="2">생활속의 생명공학<br>(실시간화상강의)<br>이종훈<br>화상강의강의실</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">10</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">11</td>
+                                <td class="color-3" rowspan="2">동남아시아 지역의 이해<br>이효선<br>비전타워-315</td>
+                                <td></td>
+                                <td></td>
+                                <td class="color-4">이산수학 (영어강의)<br>윤유림 / AI관-415</td>
+                                <td class="color-4">이산수학 (영어강의)<br>윤유림 / AI관-415</td>
+                            </tr>
+                            <tr>
+                                <td class="hour">12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">1</td>
+                                <td class="color-5" rowspan="2">과학기술글쓰기<br>류수린<br>비전타워-202</td>
+                                <td></td>
+                                <td></td>
+                                <td class="color-6">C언어<br>오기욱 / AI관-510</td>
+                                <td class="color-7" rowspan="2">지능형 정보 기술<br>(사이버)<br>이용<br>비전타워-201</td>
+                            </tr>
+                            <tr>
+                                <td class="hour">2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="color-8" rowspan="2">College English 2<br>박현아<br>글로벌센터-103</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">4</td>
+                                <td class="color-6">C언어<br>오기욱 / AI관-510</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">6</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="table3" class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th  class="hour">시간</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="hour">9</td>
+                                <td></td>
+                                <td class="color-1" rowspan="3">웹프로그래밍<br>이명규<br>AI관-408</td>
+                                <td class="color-2" rowspan="2">컴퓨터구조<br>오상엽<br>AI관-303</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">10</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">11</td>
+                                <td class="color-2">컴퓨터구조<br>오상엽 / AI관-303</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">1</td>
+                                <td class="color-3" rowspan="2">컴퓨터공학개론<br>박양재<br>AI관-307</td>
+                                <td class="color-3">컴퓨터공학개론<br>박양재 / AI관-307</td>
+                                <td></td>
+                                <td></td>
+                                <td class="color-4" rowspan="2">College English 2<br>Dwaine Charies Tinling<br>글로벌센터-215</td>
+                            </tr>
+                            <tr>
+                                <td class="hour">2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">3</td>
+                                <td class="color-5">자료구조<br>최창 / AI관-510</td>
+                                <td></td>
+                                <td class="color-5" rowspan="2">자료구조<br>최창<br>AI관-510</td>
+                                <td></td>
+                                <td class="color-6" rowspan="3">확률과 통계<br>황재천<br>반도체대학-117</td>
+                            </tr>
+                            <tr>
+                                <td class="hour">4</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="hour">6</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+    
+        <section id="activities">
+            <div class="title">
+                <h3>교&nbsp;&nbsp;내&nbsp;&nbsp;활&nbsp;&nbsp;동</h3>
+            </div>
+            <div class="container">
+                <div class="image">
+                    <p class="tt">학생회 활동</p>
+                    <img src="./Images/cnear.png">
+                    <img src="./Images/code.png">
+                    <div class="basic">
+                        <p>대학교에 입학하면 동아리에 꼭 가입하겠다고 다짐하며 동아리를 찾아보던 중 학생회가 눈에 먼저 들어왔다.</p>
+                        <p>학생회 또한 고등학교 때부터 많은 관심이 있었기 때문에 다양한 선후배와 어울리고 컴퓨터공학전공 발전을 위해 앞에서 힘쓰고 싶어 학생회에 들어오게 되었다.</p>
+                        <p>1학년 때는 행사 팀원의 직책을 맡아 여러 행사를 중심적으로 진행하고 기획했다.</p>
+                        <p>2학년 때는 인사 팀장의 직책을 맡아 컴퓨터공학전공 학우들의 인원을 파악하고 행사를 진행할 때 구글폼 등을 제작하여 인원을 파악하고 통솔하였다.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

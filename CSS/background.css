@@ -1,0 +1,153 @@
+/* 구글 폰트 'Poppins'와 'Sail'을 가져옴 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Sail&display=swap');
+
+/* 기본 스타일 설정 */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+                                #A69FFF 0%,
+                                #CCCCFF 22%,
+                                #EFE1FF 86%,
+                                #FFFFFF 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: auto; /* 스크롤 가능하도록 설정 */
+}
+
+/* 네비게이션 바 스타일 설정 */
+nav {
+    width: 100%; /* 전체 너비로 설정 */
+    height: 60px; /* 네비게이션 바 높이 설정 */
+    background-color: rgba(87, 84, 135, 0.5); /* 반투명 배경색 */
+    position: fixed; /* 화면 상단에 고정 */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* 다른 요소보다 위에 표시 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 0 20px; /* 좌우 패딩 추가 */
+}
+
+/* 로고 스타일 설정 */
+nav .logo {
+    position: absolute; /* 절대 위치 */
+    left: 30px; /* 좌측 여백 */
+    font-family: 'Sail', cursive;
+}
+
+nav div a {
+    color: white; /* 링크 텍스트 색상 설정 */
+    text-decoration: none; /* 기본 링크 밑줄 제거 */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin: 0;
+    padding: 0;
+    cursor: pointer; /* 커서 변경 */
+}
+
+nav ul li {
+    margin: 0 70px; /* 각 항목 간격 설정 */
+}
+
+nav ul li a {
+    font-size: 20px; /* 글씨 크기를 px 단위로 고정 */
+    color: #E1E1FF; /* 링크 텍스트 색상 설정 */
+    text-decoration: none; /* 기본 링크 밑줄 제거 */
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: white; /* 링크에 마우스를 올렸을 때와 클릭했을 때 텍스트 색상 */
+    text-decoration: underline; /* 링크에 마우스를 올렸을 때와 클릭했을 때 밑줄 표시 */
+}
+
+/* 서브메뉴 스타일 추가 */
+nav ul li .dropdown-content {
+    display: none; /* 기본적으로 숨김 */
+    position: absolute; /* 절대 위치 설정 */
+    top: 60px; /* 부모 항목 바로 아래에 위치 */
+    left: 50%; /* 부모 항목 중앙 정렬 */
+    height: 70px;
+    width: 1100px;
+    transform: translateX(-50%); /* 중앙 정렬을 위한 변환 */
+    background: linear-gradient(to bottom,rgba(87, 84, 135, 0.5) 0%, rgba(87, 84, 135, 0.6) 15%, rgba(80, 75, 142, 0.897) 50%, rgb(82, 76, 171) 100%); /* 서브메뉴 배경색 설정 */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    z-index: 1001; /* 네비게이션 바 위에 표시 */
+    padding: 10px 0; /* 상하 패딩 추가 */
+    border-radius: 0px 0px 4px 4px; /* 모서리 둥글게 설정 */
+    justify-content: center; /* 항목을 가로 중앙 정렬 */
+    align-items: center; /* 항목을 세로 중앙 정렬 */
+}
+
+nav ul li .dropdown-content a {
+    color: #E1E1FF; /* 서브메뉴 링크 색상 */
+    padding: 12px 16px; /* 패딩 설정 */
+    text-decoration: none; /* 기본 링크 밑줄 제거 */
+    text-align: center; /* 중앙 정렬 */
+    margin: 0 50px; /* 각 항목 간격 설정 */
+}
+
+nav ul li .dropdown-content a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* 서브메뉴 표시 */
+nav ul li.active .dropdown-content {
+    display: flex; /* 클릭했을 때 서브메뉴 표시 */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    overflow-y: scroll; /* 수직 스크롤 가능 */
+    scroll-snap-type: y mandatory; /* 스크롤 스냅 설정 */
+}
+
+section {
+    flex: 1;
+    height: 100vh; /* 섹션 높이를 화면 높이로 설정 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 세로 방향에서 시작 부분에 정렬 */
+    align-items: center;
+    padding: 60px 20px; /* 네비게이션 바 아래에 패딩 추가 */
+    box-sizing: border-box; /* 패딩을 포함한 박스 크기 계산 */
+    scroll-snap-align: start; /* 스크롤 스냅 정렬 */
+}
+
+.title {
+    color: white;
+    background-color: rgba(87, 84, 135, 0.5);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 1200px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box; /* 패딩 포함한 박스 크기 계산 */
+}

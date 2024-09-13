@@ -1,0 +1,78 @@
+.piano {
+    height: 170px;
+    width: 170px;
+    margin-top: 5px;
+}
+
+.cafe {
+    height: 160px;
+    width: 160px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.comic {
+    height: 170px;
+    width: 170px;
+}
+
+#hobby span {
+    text-align: center;
+    margin: 0 60px; /* 각 항목 간격 설정 */
+}
+
+#hobby .tt {
+    color: #393945;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(247, 244, 255, 0.5);
+    border-radius: 10px;
+    padding: 2px 0px;
+}
+
+#hobby .container {
+    margin: 100px;
+}
+
+#hobby .container span {
+    border: 2px solid white; /* 테두리 설정 (두께 2px, 색상 흰색) */
+    background-color: rgba(255, 255, 255, 0.3); /* rgba 형식으로 변경 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.63);
+    padding: 25px 10px 0px 10px;
+    height: 270px;
+    width: 300px;
+}
+
+#music span {
+    text-align: center;
+    margin: 70px 60px; /* 각 항목 간격 설정 */
+}
+
+#music span > div {
+    color: #393945;
+    text-decoration: none;
+}
+
+#music .mt {
+    color: #393945;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: rgba(247, 244, 255, 0.5);
+    border-radius: 10px;
+    padding: 2px 0px;
+}
+
+#music .container span {
+    border: 2px solid white; /* 테두리 설정 (두께 2px, 색상 흰색) */
+    background-color: rgba(255, 255, 255, 0.3); /* rgba 형식으로 변경 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.63);
+    padding: 25px 10px 0px 10px;
+    height: 300px;
+    width: 300px;
+}

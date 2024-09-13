@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yujeong's Portpolio</title>
+
+    <!-- CSS 파일 링크 -->
+    <link href="./CSS/background.css" rel="stylesheet">
+    <link href="./CSS/FAVORIT.css" rel="stylesheet">
+
+    <!-- JavaScript 파일 링크 -->
+    <script src="./JS/background.js" defer></script>
+    <script src="./JS/FAVORIT.js" defer></script>
+
+</head>
+<body>
+    <!--네비게이션 바 시작-->
+    <nav>
+        <!--로고 영역 시작-->
+        <div class="logo">
+            <a href="Index.html">Yujeong's Portpolio</a>
+        </div>
+        <!--로고 영역 끝-->
+
+        <!--네비게이션 메뉴 시작-->
+        <ul>
+            <li class="dropdown">
+                <a class="dropbtn">ABOUT ME</a>
+                <div class="dropdown-content">
+                    <a href="ABOUT_ME.html#introduction">기본 정보</a>
+                    <a href="ABOUT_ME.html#charater">성격</a>
+                    <a href="ABOUT_ME.html#SNS">SNS</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">FAVORIT</a>
+                <div class="dropdown-content">
+                    <a href="#music" onclick="scrollToSection(event, '#music')">음악</a>
+                    <a href="#hobby" onclick="scrollToSection(event, '#hobby')">취미</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">SCHOOL_LIFE</a>
+                <div class="dropdown-content">
+                    <a href="SCHOOL_LIFE.html#time_table">시간표</a>
+                    <a href="SCHOOL_LIFE.html#activities">교내 활동</a>
+                </div>
+            </li>
+        </ul>
+        <!--네비게이션 메뉴 끝-->
+    </nav>
+    <!--네비게이션 바 끝-->
+    <main>
+        <section id="music">
+            <div class="title">
+                <h3>음&nbsp;&nbsp;악</h3>
+            </div>
+            <div class="container">
+                <span>
+                    <div class="mt">건물 사이에 피어난 장미</div>
+                    <br>
+                    <div class="video1">
+                        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/vfUAckewh_8?si=U_NmEYiVqVXzx5kT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <div>H1-KEY (하이키)<br>H1-KEY 1st Mini Album [Rose Blossom]</div>
+                    
+                </span>
+                <span>
+                    <div class="mt">나는 아픈 건 딱 질색이니까</div>
+                    <br>
+                    <div><iframe width="280" height="157.5" src="https://www.youtube.com/embed/ATK7gAaZTOM?si=Q_Y-J2kqkYU1yU_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <br>
+                    <div>(여자)아이들<br>2</div>
+                    
+                </span>
+                <span>
+                    <div class="mt">나의 사춘기에게</div>
+                    <br>
+                    <div><iframe width="280" height="157.5" src="https://www.youtube.com/embed/Dc4q3QqCGC4?si=oPAVE58nv0LtJ1SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <br>
+                    <div>볼빨간사춘기<br>Red Diary Page.1</div>
+                </span>
+            </div>
+        </section>        
+        
+        <section id="hobby">
+            <div class="title">
+                <h3>취&nbsp;&nbsp;미</h3>
+            </div>
+            <div class="container">
+                <span>
+                    <div class="tt">피아노 연주</div>
+                    <br>
+                    <div><img src="./Images/piano.png" class="piano"></div>
+                    
+                </span>
+                <span>
+                    <div class="tt">방탈출 카페</div>
+                    <br>
+                    <div><img src="./Images/cafe.jpg" class="cafe"></div>
+                    
+                </span>
+                <span>
+                    <div class="tt">웹툰</div>
+                    <br>
+                    <div><img src="./Images/comic.png" class="comic"></div>
+                </span>
+            </div>
+        </section>
+    
+
+    </main>
+</body>
+</html>
