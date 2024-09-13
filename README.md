@@ -2,7 +2,7 @@
 
 🔗 [자기소개 페이지 보러가기](https://n-yujeong.github.io/INTRODUCE/Index.html)
 
-![자기소개 페이지 미리보기](https://user-images.githubusercontent.com/72453080/190895975-1dca0639-99fb-4c80-a2f3-372fbfcb5e97.gif)
+![자기소개 페이지 미리보기](https://github.com/user-attachments/assets/696f11e0-a1f6-4fa3-88a9-b2d8b78264ea)
 
 
 ## 📌 사용 기술
