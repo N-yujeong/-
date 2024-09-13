@@ -1,6 +1,6 @@
 # Wecode 1주차 **[자기소개페이지 만들기] 과제 제출용 페이지**입니다.
 
-🔗 [자기소개 페이지 보러가기]([http://](https://n-yujeong.github.io/INTRODUCE/Index.html))
+🔗 [자기소개 페이지 보러가기](https://n-yujeong.github.io/INTRODUCE/Index.html)
 
 ![자기소개 페이지 미리보기](https://user-images.githubusercontent.com/72453080/190895975-1dca0639-99fb-4c80-a2f3-372fbfcb5e97.gif)
 
