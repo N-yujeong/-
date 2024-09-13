@@ -2,8 +2,7 @@
 
 🔗 [자기소개 페이지 보러가기](https://n-yujeong.github.io/INTRODUCE/Index.html)
 
-![자기소개 페이지 미리보기](https://github.com/user-attachments/assets/696f11e0-a1f6-4fa3-88a9-b2d8b78264ea)
-
+![자기소개 페이지 미리보기](https://github.com/user-attachments/assets/802d9eb1-f31e-4bb1-85ea-8888083b6a68)
 
 ## 📌 사용 기술
 HTML CSS JavaScript
